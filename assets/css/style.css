@@ -1,3 +1,9 @@
+/*
+CSS Made by: Zerbaib
+For CatDev
+*/
+
+/* Reset CSS */
 * {
     margin: 0px;
     padding: 0px;
@@ -5,18 +11,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.card h1 {
-    color: #333;
-    font-size: 48px;
-    margin-top: 100px;
-}
-
-.card p {
-    color: #666;
-    font-size: 24px;
-    margin-top: 20px;
-}
-
+/* CSS for the navbar */
 ul {
     list-style-type: none;
     margin: 0px;
@@ -48,9 +43,24 @@ li a:hover:not(.active) {
     background-color: #4c98af;
 }
 
+/* CSS for the hero card */
 .card {
     margin-left: 50px;
 }
+
+.card h1 {
+    color: #333;
+    font-size: 48px;
+    margin-top: 100px;
+}
+
+.card p {
+    color: #666;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* CSS for the about section */
 
 .about {
     background-color: #adadad;
@@ -59,12 +69,18 @@ li a:hover:not(.active) {
     padding: 15px;
     border-radius: 8px;
 }
+
 .about h2 {
     color: #080808;
 }
+
 .about p {
     color: #1d1c1d;
+    font-size: 24px;
+    margin-top: 20px;
 }
+
+/* CSS for the footer */
 
 footer {
     margin-top: 5rem;
