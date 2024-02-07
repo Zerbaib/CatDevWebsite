@@ -45,12 +45,13 @@ li a:hover {
 
 /* CSS for the hero card */
 .windows95 {
-    margin-top: 50px;
-    border: 1px solid #333;
-    background-color: #fff;
+    margin-left: 15px;
+    margin-top: 75px;
+    border: 1px solid #c0c0c0;
+    background-color: #c0c0c0;
     width: 400px;
     height: 300px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border: 2px outset #dfdfdf;
   }
   
   .barre-titre {
@@ -60,8 +61,8 @@ li a:hover {
     padding-right: 2px;
   }
   
-  .bouton-fermer, .bouton-reduire, .bouton-agrandir {
-    margin-top: 1px;
+  .bouton-reduire, .bouton-agrandir, .bouton-fermer {
+    margin-top: 2px;
     float: right;
     width: 20px;
     height: 20px;
@@ -71,6 +72,7 @@ li a:hover {
   }
   
   .bouton-fermer {
+    padding-left: 3px;
     background-color: #c0c0c0;
     color: #000000;
   }
