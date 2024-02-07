@@ -3,121 +3,65 @@ CSS Made by: Zerbaib
 For CatDev
 */
 
+/* Import the CSS for the Windows 95 icons */
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/path-back.css');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+
 /* Reset CSS */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin-bottom: 55px;
 }
 
 /* CSS for the navbar */
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-li {
-    float: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #c0c0c0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  border: 2px outset #dfdfdf;
+  float: left;
 }
 
-li a:hover:not(.active) {
-    background-color: #111;
+li a:hover {
+  background-color: #919191;
+  border: 2px inset #dfdfdf;
 }
 
-.active {
-    background-color: #4c98af;
+.credittip {
+  opacity: 0;
+  top: 10%;
+  left: 50%;
+  visibility: hidden;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
 }
 
-/* CSS for the hero card */
-.card {
-    margin-right: 1024px;
-    margin-top: 150px;
-    margin-left: 100px;
-
-    padding: 55px;
-
-    border-color: #333;
-    border-width: 10px;
-    border-style: groove;
-    border-radius: 15px;
-}
-
-.card h1 {
-    color: #333;
-    font-size: 48px;
-    margin-top: 10px;
-}
-
-.card p {
-    color: #666;
-    font-size: 24px;
-    margin-top: 20px;
-}
-
-/* CSS for the about section */
-
-.about {
-    background-color: #adadad;
-    margin-left: 25px;
-    max-width: 1000px;
-    padding: 15px;
-    border-radius: 8px;
-}
-
-.about h2 {
-    color: #080808;
-}
-
-.about p {
-    color: #1d1c1d;
-    font-size: 24px;
-    margin-top: 20px;
-}
-
-/* CSS for the services section */
-
-.services {
-    background-color: #adadad;
-    margin-top: 25px;
-    margin-left: 105px;
-    max-width: 1000px;
-    padding: 15px;
-    border-radius: 8px;
-}
-
-.services h2 {
-    color: #080808;
-}
-
-.services p {
-    color: #1d1c1d;
-    font-size: 24px;
-    margin-top: 20px;
-}
-
-/* CSS for the footer */
-
-footer {
-    margin-top: 5rem;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
+.credit-btn:hover .credittip {
+  float: none;
+  visibility: visible;
+  opacity: 1;
 }

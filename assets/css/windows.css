@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+.windows95 {
+    margin-left: 15px;
+    margin-top: 55px;
+    border: 1px solid #c0c0c0;
+    background-color: #c0c0c0;
+    width: 400px;
+    height: 300px;
+    max-width: 1024px;
+    max-height: 1024px;
+    border: 2px outset #dfdfdf;
+}
+
+.title-bar95 {
+    background-color: #000080;
+    color: #fff;
+    height: 25px;
+    padding-right: 2px;
+}
+
+.btn-redu95, .btn-agr95, .btn-close95 {
+    margin-top: 2px;
+    float: right;
+    width: 20px;
+    height: 20px;
+    border: 2px outset #dfdfdf;
+    cursor: pointer;
+}
+
+.btn-redu95:hover, .btn-agr95:hover, .btn-close95:hover {
+    background-color: #919191;
+    border: 2px inset #dfdfdf;
+}
+
+.btn-close95 {
+    padding-left: 3px;
+    background-color: #c0c0c0;
+    color: #000000;
+}
+
+.btn-redu95 {
+    background-color: #c0c0c0;
+    color: #000000;
+}
+
+.btn-agr95 {
+    background-color: #c0c0c0;
+    color: #000000;
+}
+
+.title95 {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.content95 {
+    margin: 5px;
+    padding: 10px;
+    background-color: #000000;
+    border: 2px inset #dfdfdf;
+    color: #fff;
+    font-family: 'Pixelify Sans', sans-serif;
+}
