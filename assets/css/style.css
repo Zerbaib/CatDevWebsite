@@ -43,55 +43,21 @@ li a:hover {
   border: 2px inset #dfdfdf;
 }
 
-/* CSS for the hero card */
-
-/* CSS for the about section */
-
-.about {
-  background-color: #000;
-  margin-left: 25px;
-  max-width: 1000px;
-  padding: 15px;
-  border-radius: 8px;
+.credittip {
+  opacity: 0;
+  top: 10%;
+  left: 50%;
+  visibility: hidden;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
 }
 
-.about h2 {
-  color: #ff0000;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 36px;
-  text-transform: uppercase;
-}
-
-.about p {
-  color: #fff;
-  font-size: 24px;
-  margin-top: 20px;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-/* CSS for the services section */
-
-.services {
-  background-color: #000;
-  margin-top: 25px;
-  margin-left: 105px;
-  max-width: 1000px;
-  padding: 15px;
-  border-radius: 8px;
-}
-
-.services h2 {
-  color: #ff0000;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 36px;
-  text-transform: uppercase;
-}
-
-.services p {
-  color: #fff;
-  font-size: 24px;
-  margin-top: 20px;
-  font-family: 'Courier New', Courier, monospace;
+.credit-btn:hover .credittip {
+  float: none;
+  visibility: visible;
+  opacity: 1;
 }
 
 /* CSS for the footer */
