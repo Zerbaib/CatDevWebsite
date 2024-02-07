@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
 .windows95 {
     margin-left: 15px;
     margin-top: 55px;
@@ -5,6 +7,8 @@
     background-color: #c0c0c0;
     width: 400px;
     height: 300px;
+    max-width: 1024px;
+    max-height: 1024px;
     border: 2px outset #dfdfdf;
 }
 
@@ -51,5 +55,10 @@
 }
 
 .content95 {
+    margin: 5px;
     padding: 10px;
+    background-color: #000000;
+    border: 2px inset #dfdfdf;
+    color: #fff;
+    font-family: 'Pixelify Sans', sans-serif;
 }

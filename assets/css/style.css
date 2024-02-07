@@ -5,6 +5,8 @@ For CatDev
 
 /* Import the CSS for the Windows 95 icons */
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/path-back.css');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
 
 /* Reset CSS */
 * {
@@ -12,6 +14,10 @@ For CatDev
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin-bottom: 55px;
 }
 
 /* CSS for the navbar */
@@ -43,67 +49,19 @@ li a:hover {
   border: 2px inset #dfdfdf;
 }
 
-/* CSS for the hero card */
-
-/* CSS for the about section */
-
-.about {
-  background-color: #000;
-  margin-left: 25px;
-  max-width: 1000px;
-  padding: 15px;
-  border-radius: 8px;
-}
-
-.about h2 {
-  color: #ff0000;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 36px;
-  text-transform: uppercase;
-}
-
-.about p {
-  color: #fff;
-  font-size: 24px;
-  margin-top: 20px;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-/* CSS for the services section */
-
-.services {
-  background-color: #000;
-  margin-top: 25px;
-  margin-left: 105px;
-  max-width: 1000px;
-  padding: 15px;
-  border-radius: 8px;
-}
-
-.services h2 {
-  color: #ff0000;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 36px;
-  text-transform: uppercase;
-}
-
-.services p {
-  color: #fff;
-  font-size: 24px;
-  margin-top: 20px;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-/* CSS for the footer */
-
-footer {
-  margin-top: 5rem;
-  background-color: #000;
-  color: #fff;
-  padding: 20px;
+.credittip {
+  opacity: 0;
+  top: 10%;
+  left: 50%;
+  visibility: hidden;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
   text-align: center;
-  bottom: 0;
-  width: 100%;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 14px;
+}
+
+.credit-btn:hover .credittip {
+  float: none;
+  visibility: visible;
+  opacity: 1;
 }
