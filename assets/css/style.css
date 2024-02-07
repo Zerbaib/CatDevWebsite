@@ -3,159 +3,163 @@ CSS Made by: Zerbaib
 For CatDev
 */
 
+/* Import the CSS for the Windows 95 icons */
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/path-back.css');
 
 /* Reset CSS */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* CSS for the navbar */
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #c0c0c0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-li {
-    float: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #c0c0c0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 li a {
-    display: block;
-    color: #000000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 14px;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  border: 2px outset #dfdfdf;
+  float: left;
 }
 
 li a:hover {
-    background-color: #919191;
+  background-color: #919191;
+  border: 2px inset #dfdfdf;
 }
 
 /* CSS for the hero card */
 .windows95 {
-    margin-left: 15px;
-    margin-top: 75px;
-    border: 1px solid #c0c0c0;
-    background-color: #c0c0c0;
-    width: 400px;
-    height: 300px;
-    border: 2px outset #dfdfdf;
-  }
+  margin-left: 15px;
+  margin-top: 75px;
+  border: 1px solid #c0c0c0;
+  background-color: #c0c0c0;
+  width: 400px;
+  height: 300px;
+  border: 2px outset #dfdfdf;
+}
   
-  .barre-titre {
-    background-color: #000080;
-    color: #fff;
-    height: 25px;
-    padding-right: 2px;
-  }
+.barre-titre {
+  background-color: #000080;
+  color: #fff;
+  height: 25px;
+  padding-right: 2px;
+}
   
-  .bouton-reduire, .bouton-agrandir, .bouton-fermer {
-    margin-top: 2px;
-    float: right;
-    width: 20px;
-    height: 20px;
-    border: 2px outset #dfdfdf;
-    
-    cursor: pointer;
-  }
+.bouton-reduire, .bouton-agrandir, .bouton-fermer {
+  margin-top: 2px;
+  float: right;
+  width: 20px;
+  height: 20px;
+  border: 2px outset #dfdfdf;
+  cursor: pointer;
+}
   
-  .bouton-fermer {
-    padding-left: 3px;
-    background-color: #c0c0c0;
-    color: #000000;
-  }
+.bouton-reduire:hover, .bouton-agrandir:hover, .bouton-fermer:hover {
+  background-color: #919191;
+  border: 2px inset #dfdfdf;
+}
+
+.bouton-fermer {
+  padding-left: 3px;
+  background-color: #c0c0c0;
+  color: #000000;
+}
   
-  .bouton-reduire {
-    background-color: #c0c0c0;
-    color: #000000;
-  }
+.bouton-reduire {
+  background-color: #c0c0c0;
+  color: #000000;
+}
   
-  .bouton-agrandir {
-    background-color: #c0c0c0;
-    color: #000000;
-  }
+.bouton-agrandir {
+  background-color: #c0c0c0;
+  color: #000000;
+}
   
-  .titre {
-    font-weight: bold;
-    margin-left: 5px;
-  }
+.titre {
+  font-weight: bold;
+  margin-left: 5px;
+}
   
-  .contenu {
-    padding: 10px;
-  }
+.contenu {
+  padding: 10px;
+}
   
 
 /* CSS for the about section */
 
 .about {
-    background-color: #000;
-    margin-left: 25px;
-    max-width: 1000px;
-    padding: 15px;
-    border-radius: 8px;
+  background-color: #000;
+  margin-left: 25px;
+  max-width: 1000px;
+  padding: 15px;
+  border-radius: 8px;
 }
 
 .about h2 {
-    color: #ff0000;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 36px;
-    text-transform: uppercase;
+  color: #ff0000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 36px;
+  text-transform: uppercase;
 }
 
 .about p {
-    color: #fff;
-    font-size: 24px;
-    margin-top: 20px;
-    font-family: 'Courier New', Courier, monospace;
+  color: #fff;
+  font-size: 24px;
+  margin-top: 20px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 /* CSS for the services section */
 
 .services {
-    background-color: #000;
-    margin-top: 25px;
-    margin-left: 105px;
-    max-width: 1000px;
-    padding: 15px;
-    border-radius: 8px;
+  background-color: #000;
+  margin-top: 25px;
+  margin-left: 105px;
+  max-width: 1000px;
+  padding: 15px;
+  border-radius: 8px;
 }
 
 .services h2 {
-    color: #ff0000;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 36px;
-    text-transform: uppercase;
+  color: #ff0000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 36px;
+  text-transform: uppercase;
 }
 
 .services p {
-    color: #fff;
-    font-size: 24px;
-    margin-top: 20px;
-    font-family: 'Courier New', Courier, monospace;
+  color: #fff;
+  font-size: 24px;
+  margin-top: 20px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 /* CSS for the footer */
 
 footer {
-    margin-top: 5rem;
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 14px;
+  margin-top: 5rem;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
 }
