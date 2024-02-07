@@ -3,6 +3,8 @@ CSS Made by: Zerbaib
 For CatDev
 */
 
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/path-back.css');
+
 /* Reset CSS */
 * {
     margin: 0;
@@ -17,7 +19,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #c0c0c0;
     position: fixed;
     top: 0;
     width: 100%;
@@ -29,50 +31,74 @@ li {
 
 li a {
     display: block;
-    color: white;
+    color: #000000;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
 }
 
-li a:hover:not(.active) {
-    background-color: #111;
-}
-
-.active {
-    background-color: #4c98af;
+li a:hover {
+    background-color: #919191;
 }
 
 /* CSS for the hero card */
-.card {
-    margin-right: 1024px;
-    margin-top: 150px;
-    margin-left: 100px;
-
-    padding: 55px;
-
-    border-color: #333;
-    border-width: 10px;
-    border-style: groove;
-    border-radius: 15px;
-}
-
-.card h1 {
-    color: #333;
-    font-size: 48px;
-    margin-top: 10px;
-}
-
-.card p {
-    color: #666;
-    font-size: 24px;
-    margin-top: 20px;
-}
+.windows95 {
+    margin-top: 50px;
+    border: 1px solid #333;
+    background-color: #fff;
+    width: 400px;
+    height: 300px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .barre-titre {
+    background-color: #000080;
+    color: #fff;
+    height: 25px;
+    padding-right: 2px;
+  }
+  
+  .bouton-fermer, .bouton-reduire, .bouton-agrandir {
+    margin-top: 1px;
+    float: right;
+    width: 20px;
+    height: 20px;
+    border: 2px outset #dfdfdf;
+    
+    cursor: pointer;
+  }
+  
+  .bouton-fermer {
+    background-color: #c0c0c0;
+    color: #000000;
+  }
+  
+  .bouton-reduire {
+    background-color: #c0c0c0;
+    color: #000000;
+  }
+  
+  .bouton-agrandir {
+    background-color: #c0c0c0;
+    color: #000000;
+  }
+  
+  .titre {
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
+  .contenu {
+    padding: 10px;
+  }
+  
 
 /* CSS for the about section */
 
 .about {
-    background-color: #adadad;
+    background-color: #000;
     margin-left: 25px;
     max-width: 1000px;
     padding: 15px;
@@ -80,19 +106,23 @@ li a:hover:not(.active) {
 }
 
 .about h2 {
-    color: #080808;
+    color: #ff0000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 36px;
+    text-transform: uppercase;
 }
 
 .about p {
-    color: #1d1c1d;
+    color: #fff;
     font-size: 24px;
     margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* CSS for the services section */
 
 .services {
-    background-color: #adadad;
+    background-color: #000;
     margin-top: 25px;
     margin-left: 105px;
     max-width: 1000px;
@@ -101,23 +131,29 @@ li a:hover:not(.active) {
 }
 
 .services h2 {
-    color: #080808;
+    color: #ff0000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 36px;
+    text-transform: uppercase;
 }
 
 .services p {
-    color: #1d1c1d;
+    color: #fff;
     font-size: 24px;
     margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* CSS for the footer */
 
 footer {
     margin-top: 5rem;
-    background-color: #333;
+    background-color: #000;
     color: #fff;
     padding: 20px;
     text-align: center;
     bottom: 0;
     width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
 }
