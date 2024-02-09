@@ -1,23 +1,42 @@
-class NavbarWin95 extends HTMLElement {
-    constructor() {
-        super();
-        this.innerHTML = `
-            <nav class="NavbarWin95">
-            <link rel="stylesheet" href="/assets/block/navbar/style.css">
-            <ul>
-            <li><a class="active" href="/">Home</a></li>
-            <li><a href="/pages/host/">Hébergement</a></li>
-            <li><a href="/pages/dev/">Développement</a></li>
-            <li><a href="/pages/about/">A Propos</a></li>
-            <li><a href="#">Contact</a></li>
-            <li style="float: right;" class="credit-btn">
-            <a>Credit</a>
-            <span class="credittip">&copy; CatDev 2023-2024. All rights reserved.<br><em>This website respect EU and American law.</em></span>
+import { LitElement, html } from 'lit-element';
+
+class Win95Navbar extends LitElement {
+  static get properties() {
+    return {
+      items: { type: Array, reflect: true },
+      activePath: { type: String, reflect: true },
+    };
+  }
+
+  constructor() {
+    super();
+    this.items = [
+      { href: "/", label: "Home", active: true },
+      { href: "/pages/host/", label: "Hébergement" },
+      { href: "/pages/dev/", label: "Développement" },
+      { href: "/pages/about/", label: "A Propos" },
+      { href: "#", label: "Contact" },
+    ];
+    this.activePath = window.location.pathname;
+  }
+
+  render() {
+    return html`
+      <nav class="NavbarWin95">
+        <ul>
+          ${this.items.map((item) => html`
+            <li class=${item.href === this.activePath ? 'active' : ''}>
+              <a href=${item.href}>${item.label}</a>
             </li>
-            </ul>
-            </nav>
-        `;
-    }
+          `)}
+          <li style="float: right;" class="credit-btn">
+            <a>Credit</a>
+            <span class="credittip">&copy; CatDev 2023-2024. All rights reserved.</span>
+          </li>
+        </ul>
+      </nav>
+    `;
+  }
 }
 
-customElements.define('Win95nav', NavbarWin95);
+customElements.define('win95-navbar', Win95Navbar);
